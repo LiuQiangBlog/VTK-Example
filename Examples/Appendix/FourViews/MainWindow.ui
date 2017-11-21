@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Medical Image Viewer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QVTKWidget" name="m_AxialWidget"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QVTKWidget" name="m_SagittalWidget"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QVTKWidget" name="m_CoronalWidget"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QVTKWidget" name="m_3DWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_Menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="m_ActionOpen"/>
+   </widget>
+   <addaction name="m_Menu"/>
+  </widget>
+  <widget class="QStatusBar" name="m_Statusbar"/>
+  <action name="m_ActionOpen">
+   <property name="text">
+    <string>打开...</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

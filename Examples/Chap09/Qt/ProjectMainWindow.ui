@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectMainWindow</class>
+ <widget class="QMainWindow" name="ProjectMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>595</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>9-1 读取JPG图像</string>
+  </property>
+  <widget class="QWidget" name="m_CentralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QVTKWidget" name="m_QVTKWidget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>595</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_MenuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="m_OpenAction"/>
+   </widget>
+   <addaction name="m_MenuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="m_StatusBar"/>
+  <action name="actionLoadImage">
+   <property name="text">
+    <string>打开图像</string>
+   </property>
+  </action>
+  <action name="m_OpenAction">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
