@@ -10,4 +10,6 @@ VTK图形图像开发进阶里面的例子程序
 
 ![图片](http://img.blog.csdn.net/20161116172359845)
 
-[VTK光照](https://github.com/GHAUOA/VTK-Example/blob/master/Examples/Chap02/2.2_RenderCylinder-Lights.cpp)
+[VTK光照vtkLight](https://github.com/GHAUOA/VTK-Example/blob/master/Examples/Chap02/2.2_RenderCylinder-Lights.cpp)
+
+
